@@ -1,11 +1,22 @@
 ### E. Скорая помощь
-|                     |                                  |
-|:--------------------|:---------------------------------|
-| Ограничение времени | 1 секунда                        |
-| Ограничение памяти  | 64Mb                             |
-| Ввод                | стандартный ввод или input.txt   |
-| Вывод               | стандартный вывод или output.txt |
-
+<table>
+         <tr class="time-limit">
+            <td class="property-title">Ограничение времени</td>
+            <td>1&nbsp;секунда</td>
+         </tr>
+         <tr class="memory-limit">
+            <td class="property-title">Ограничение памяти</td>
+            <td>64Mb</td>
+         </tr>
+         <tr class="input-file">
+            <td class="property-title">Ввод</td>
+            <td colspan="1">стандартный ввод или input.txt</td>
+         </tr>
+         <tr class="output-file">
+            <td class="property-title">Вывод</td>
+            <td colspan="1">стандартный вывод или output.txt</td>
+         </tr>
+      </table>
 
 
 <p>Бригада скорой помощи выехала по вызову в один из отделенных районов. К сожалению, когда диспетчер получил вызов, он успел записать только адрес дома и номер квартиры <span class="tex-math-text">K<sub>1</sub></span>, а затем связь прервалась. Однако он вспомнил, что по этому же адресу дома некоторое время назад скорая помощь выезжала в квартиру <span class="tex-math-text">K<sub>2</sub></span>, которая расположена в подъезда <span class="tex-math-text">P<sub>2</sub></span> на этаже <span class="tex-math-text">N<sub>2</sub></span>. Известно, что в доме <span class="tex-math-text">M</span> этажей и количество квартир на каждой лестничной площадке одинаково. Напишите программу, которая вычилсяет номер подъезда   <span class="tex-math-text">P<sub>1</sub></span> и номер этажа <span class="tex-math-text">N<sub>1</sub></span> квартиры <span class="tex-math-text">K<sub>1</sub></span>.</p>
