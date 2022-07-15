@@ -1,7 +1,7 @@
-def get_kth_element(_seq, k):
+def get_kth_element(_seq, k, left_border=0, right_border=-1):
     seq = _seq.copy()
-    left_border = 0
-    right_border = len(seq) - 1
+    if right_border == -1:
+        right_border = len(seq) - 1
     while left_border < right_border:
         fst_eq_x = left_border
         fst_gr_x = left_border
@@ -15,10 +15,10 @@ def get_kth_element(_seq, k):
                 seq[fst_eq_x], seq[fst_gr_x] = seq[fst_gr_x], seq[fst_eq_x]
                 fst_gr_x += 1
                 fst_eq_x += 1
-        if fst_eq_x <= k - 1 < fst_gr_x:
-            return seq[k - 1]
         if k <= fst_eq_x:
             right_border = fst_eq_x - 1
-        else:
+        elif k >= fst_gr_x:
             left_border = fst_gr_x
-    return seq[k - 1]
+        else:
+            return
+    return
