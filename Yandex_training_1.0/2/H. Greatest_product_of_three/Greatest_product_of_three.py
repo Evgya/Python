@@ -1,7 +1,6 @@
 def get_kth_element(seq, k):
     left_border = 0
     right_border = len(seq) - 1
-    split_element = 0
     while left_border < right_border:
         fst_eq_x = left_border
         fst_gr_x = left_border
